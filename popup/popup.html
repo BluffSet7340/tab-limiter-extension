@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Limiter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Tab Limiter</h2>
+  
+  <div class="info">
+    <strong>Tab Limit:</strong>
+    <span id="tabLimit">Loading...</span>
+  </div>
+  
+  <div class="info">
+    <strong>Current Tabs:</strong>
+    <span id="currentTabs">Loading...</span>
+  </div>
+  
+  <div class="form-group">
+    <label for="tabLimitInput">Maximum tabs per window:</label>
+    <input type="number" id="tabLimitInput" min="1" max="100" value="10">
+  </div>
+  
+  <button id="saveBtn">Save Settings</button>
+  
+  <div id="status" class="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

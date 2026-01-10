@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Limiter",
+  "version": "1.0.0",
+  "description": "Limit the number of tabs you can open in any browser window",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+    "id": "tab-limiter@example.com"
+    }
+  }
+}
+
