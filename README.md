@@ -9,8 +9,8 @@ A Firefox browser extension that limits the number of tabs you can open in any b
 - Set a custom tab limit per window
 - Automatically closes tabs that exceed the limit
 - Shows notifications when the limit is reached
-- Easy-to-use settings page
-- Quick access popup to view current status
+- Easy-to-use settings in popup
+- Quick access popup to view current status via pin to toolbar
 
 ## Installation
 
@@ -48,23 +48,6 @@ A Firefox browser extension that limits the number of tabs you can open in any b
 - Default tab limit: 10 tabs per window
 - Internal browser pages (about:, moz-extension://) are not counted toward the limit
 
-## Files Structure
-
-```
-tab-limiter/
-├── manifest.json       # Extension configuration
-├── background.js       # Service worker that monitors tabs
-├── options.html        # Settings page
-├── options.js          # Settings page logic
-├── popup/              # Popup directory
-│   ├── popup.html      # Extension popup UI
-│   └── popup.js        # Popup logic
-└── icons/              # Extension icons (you'll need to add these)
-    ├── icon16.png
-    ├── icon48.png
-    └── icon128.png
-```
-
 ## Icon Requirements
 
 You'll need to add icon files to the `icons/` folder:
@@ -89,6 +72,15 @@ You can create simple icons or use placeholder images. The extension will work w
 ## License
 
 MIT License - feel free to modify and distribute!
+
+## Demo 
+
+![Notification popup when limit is exceeded]()
+
+-----
+
+![Updating the tab limit]()
+
 
 ## Journal
 
