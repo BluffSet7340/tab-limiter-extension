@@ -93,3 +93,5 @@ okay so testing the code from cursor I realized that if you open the extension s
 I want to understand the intricacies of this extension that cursor created, so leaving comments and notes for my own future reference.
 
 Stll writing comments and understanding how this all works. Alhamdulillah my understanding increases day by day
+
+Right now trying to publish this extension to mozilla, made and account and trying to get my zipped package validated. Need to add the data collection property to my manifest.json file. I am not collecting data but you still have to add the property and specify none
