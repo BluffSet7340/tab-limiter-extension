@@ -75,11 +75,11 @@ MIT License - feel free to modify and distribute!
 
 ## Demo 
 
-![Notification popup when limit is exceeded]()
+![Notification popup when limit is exceeded](demo/notification.png)
 
 -----
 
-![Updating the tab limit]()
+![Updating the tab limit](demo/popup.png)
 
 
 ## Journal
@@ -95,3 +95,10 @@ I want to understand the intricacies of this extension that cursor created, so l
 Stll writing comments and understanding how this all works. Alhamdulillah my understanding increases day by day
 
 Right now trying to publish this extension to mozilla, made and account and trying to get my zipped package validated. Need to add the data collection property to my manifest.json file. I am not collecting data but you still have to add the property and specify none
+
+realized that I am using manifest v2 but the extension works fine with it so I am sticking to it
+
+also learnt that service_workers key and scripts key are the same thing - perform functions in the background the only difference is that the scripts key is used for firefox and the former is used for chrome, I'm making this extension for firefox so using scripts key. 
+
+Also has to change the add-on id since it conflicted with already existing extensions so modified it to fix that validation error when submitting the extension
+
